@@ -1,9 +1,12 @@
+import React from 'react';
+
 class GetInput extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             input: ""
         }
+    this.handleChange = this.handleChange.bind(this);
     }
 
     // add methods here
