@@ -1,0 +1,67 @@
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    display: block
+}
+
+#editor {
+    width: 50%;
+    height: 99.8vh;
+    padding: 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: black;
+    color: gold;
+    resize: none;
+}
+
+#preview {
+    width: 50%;
+    height: 99.8vh;
+    padding: 25px;
+    background-color: blanchedalmond;
+    color: black;
+    overflow: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table * {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+
+img {
+    width: 100%;
+    max-width: 500px;
+    background-color: ghostwhite;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+a {
+    color: cyan;
+}
+
+@media (max-width: 820px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #editor {
+        width: 100%;
+        height: 40vh;
+    }
+
+    #preview {
+        width: 100%;
+        height: 60vh;
+    }
+}
